@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Upload</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Upload Text</h1>
-    <form action="/upload" method="post">
-        <textarea name="text" rows="10" cols="50"></textarea><br>
-        <input type="submit" value="Upload">
-    </form>
+    <div class="container">
+        <h1 class="mt-5">Upload Text</h1>
+        <form action="/upload" method="post">
+            <div class="form-group">
+                <textarea class="form-control" name="text" rows="10" cols="50"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
 </body>
 </html>
