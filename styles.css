@@ -1,0 +1,10 @@
+/* styles.css */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
