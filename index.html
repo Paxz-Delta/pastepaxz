@@ -1,21 +1,18 @@
-<!-- templates/index.html -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Upload</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1 class="mt-5">Upload Text</h1>
-        <form action="/upload" method="post">
-            <div class="form-group">
-                <textarea class="form-control" name="text" rows="10" cols="50"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Upload</button>
-        </form>
+        <textarea id="text" class="form-control" rows="10" cols="50"></textarea>
+        <button onclick="upload()" class="btn btn-primary mt-3">Upload</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
